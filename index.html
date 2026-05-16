@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<title>RIHLA — Luxury Doula Care</title>
+<title>RIHLA — Birth By Fitrah</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,7 +64,7 @@ color:#6F4E8B;
 
 .hero{
 position:relative;
-height:118vh;
+height:125vh;
 overflow:hidden;
 background:#D8C3E6;
 }
@@ -95,7 +95,7 @@ transform:scale(1.02) translateY(-10px);
 }
 }
 
-/* OVERLAY */
+/* HERO OVERLAY */
 
 .hero-overlay{
 position:absolute;
@@ -120,6 +120,67 @@ opacity:.7;
 to{
 opacity:1;
 }
+}
+
+/* HERO TAGLINE */
+
+.hero-tagline{
+position:absolute;
+
+left:12%;
+top:58%;
+
+font-size:.78rem;
+
+letter-spacing:.42em;
+
+text-transform:uppercase;
+
+color:rgba(255,255,255,.82);
+
+font-weight:500;
+
+z-index:10;
+
+text-shadow:0 0 20px rgba(255,255,255,.18);
+
+opacity:0;
+
+animation:
+taglineReveal 1.8s ease forwards,
+taglineFloat 4s ease-in-out infinite alternate;
+
+animation-delay:.6s;
+}
+
+@keyframes taglineReveal{
+from{
+opacity:0;
+transform:translateY(12px);
+}
+to{
+opacity:.82;
+transform:translateY(0);
+}
+}
+
+@keyframes taglineFloat{
+
+0%{
+opacity:.65;
+transform:translateY(0px);
+}
+
+50%{
+opacity:1;
+transform:translateY(-4px);
+}
+
+100%{
+opacity:.78;
+transform:translateY(0px);
+}
+
 }
 
 /* NAVBAR */
@@ -153,8 +214,6 @@ z-index:100;
 
 animation:navFade 1.2s ease;
 }
-
-/* NAVBAR ANIMATION */
 
 @keyframes navFade{
 from{
@@ -472,6 +531,15 @@ object-fit:cover;
 object-position:center center;
 }
 
+.hero-tagline{
+left:10%;
+top:56%;
+
+font-size:.62rem;
+
+letter-spacing:.24em;
+}
+
 .nav-links{
 display:none;
 }
@@ -535,6 +603,10 @@ alt="RIHLA Hero"
 />
 
 <div class="hero-overlay"></div>
+
+<div class="hero-tagline">
+BIRTH BY FITRAH
+</div>
 
 <!-- NAVBAR -->
 
@@ -634,7 +706,7 @@ Minaaz is an Amani Birth Doula, Advanced Amani Teacher, and Certified Advanced D
 </p>
 
 <p>
-By the grace of Allah, she has supported over 90 families and welcomed approximately 96 babies, including twin births.
+By the grace of Allah, she has supported over 90 families and welcomed approximately 96 babies, including twin births. She has been teaching the AMANI Birth Course since 2017 and is also a Silver Category Peer Breastfeeding Counselor certified by the Supreme Council of Family Affairs, Sharjah.
 </p>
 
 <p>
