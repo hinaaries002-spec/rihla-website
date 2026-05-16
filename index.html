@@ -81,8 +81,6 @@ height:100%;
 object-fit:cover;
 object-position:center top;
 
-background:#D8C3E6;
-
 animation:heroFloat 8s ease-in-out infinite alternate;
 }
 
@@ -95,7 +93,7 @@ transform:scale(1.02) translateY(-10px);
 }
 }
 
-/* HERO OVERLAY */
+/* OVERLAY */
 
 .hero-overlay{
 position:absolute;
@@ -104,22 +102,11 @@ inset:0;
 background:
 linear-gradient(
 180deg,
-rgba(255,255,255,.03),
+rgba(255,255,255,.02),
 rgba(120,80,150,.08)
 );
 
 pointer-events:none;
-
-animation:overlayMove 12s ease infinite alternate;
-}
-
-@keyframes overlayMove{
-from{
-opacity:.7;
-}
-to{
-opacity:1;
-}
 }
 
 /* HERO TAGLINE */
@@ -127,60 +114,22 @@ opacity:1;
 .hero-tagline{
 position:absolute;
 
-left:12%;
-top:58%;
+left:7%;
+top:42%;
 
-font-size:.78rem;
+font-size:1.25rem;
 
-letter-spacing:.42em;
+letter-spacing:.34em;
 
 text-transform:uppercase;
 
-color:rgba(255,255,255,.82);
+color:rgba(255,255,255,.92);
 
-font-weight:500;
+font-weight:600;
 
 z-index:10;
 
-text-shadow:0 0 20px rgba(255,255,255,.18);
-
-opacity:0;
-
-animation:
-taglineReveal 1.8s ease forwards,
-taglineFloat 4s ease-in-out infinite alternate;
-
-animation-delay:.6s;
-}
-
-@keyframes taglineReveal{
-from{
-opacity:0;
-transform:translateY(12px);
-}
-to{
-opacity:.82;
-transform:translateY(0);
-}
-}
-
-@keyframes taglineFloat{
-
-0%{
-opacity:.65;
-transform:translateY(0px);
-}
-
-50%{
-opacity:1;
-transform:translateY(-4px);
-}
-
-100%{
-opacity:.78;
-transform:translateY(0px);
-}
-
+text-shadow:0 2px 12px rgba(255,255,255,.18);
 }
 
 /* NAVBAR */
@@ -188,7 +137,7 @@ transform:translateY(0px);
 .floating-nav{
 position:absolute;
 
-top:12px;
+top:10px;
 left:50%;
 
 transform:translateX(-50%);
@@ -203,27 +152,14 @@ padding:14px 30px;
 
 border-radius:32px;
 
-background:rgba(255,255,255,.12);
+background:rgba(255,255,255,.10);
 
 backdrop-filter:blur(18px);
 -webkit-backdrop-filter:blur(18px);
 
-border:1px solid rgba(255,255,255,.16);
+border:1px solid rgba(255,255,255,.14);
 
 z-index:100;
-
-animation:navFade 1.2s ease;
-}
-
-@keyframes navFade{
-from{
-opacity:0;
-transform:translateX(-50%) translateY(-20px);
-}
-to{
-opacity:1;
-transform:translateX(-50%) translateY(0);
-}
 }
 
 /* NAV LEFT */
@@ -379,24 +315,10 @@ text-decoration:none;
 transition:.3s;
 
 margin-top:20px;
-
-animation:pulseGlow 3s infinite;
 }
 
 .primary-btn:hover{
 transform:translateY(-2px);
-}
-
-@keyframes pulseGlow{
-0%{
-box-shadow:0 0 0 rgba(233,213,247,0);
-}
-50%{
-box-shadow:0 0 30px rgba(233,213,247,.7);
-}
-100%{
-box-shadow:0 0 0 rgba(233,213,247,0);
-}
 }
 
 /* TESTIMONIALS */
@@ -533,11 +455,11 @@ object-position:center center;
 
 .hero-tagline{
 left:10%;
-top:56%;
+top:46%;
 
-font-size:.62rem;
+font-size:.82rem;
 
-letter-spacing:.24em;
+letter-spacing:.22em;
 }
 
 .nav-links{
@@ -714,7 +636,7 @@ Her experience includes supporting natural births, water births, cesarean births
 </p>
 
 <p>
-Minaaz's work is rooted in compassion, continuous learning, and trust in Allah's decree.
+Minaaz’s work is rooted in compassion, continuous learning, and trust in Allah’s decree.
 </p>
 
 <a
