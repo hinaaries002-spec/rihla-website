@@ -438,9 +438,10 @@ height:100vh;
 
 .hero-bg{
 object-fit:cover;
-
 object-position:68% center;
 }
+
+/* MOBILE TAGLINE */
 
 .hero-tagline{
 left:55px !important;
@@ -452,6 +453,82 @@ font-size:.82rem !important;
 letter-spacing:.24em !important;
 
 text-align:left;
+}
+
+/* MOBILE NAVBAR */
+
+.floating-nav{
+
+width:calc(100% - 20px);
+
+padding:16px 20px;
+
+top:10px;
+
+border-radius:26px;
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:14px;
+}
+
+/* NAV LINKS NOW VISIBLE */
+
+.nav-links{
+
+display:flex;
+
+gap:18px;
+
+flex-wrap:wrap;
+}
+
+.nav-links a{
+
+font-size:.88rem;
+}
+
+/* LOGO */
+
+.logo-text h3{
+font-size:1.4rem;
+}
+
+.logo-text p{
+font-size:.58rem;
+}
+
+/* MOBILE SECTIONS */
+
+.services-grid,
+.testimonials-grid{
+grid-template-columns:1fr;
+}
+
+.section{
+padding:90px 0;
+}
+
+.section-title{
+font-size:2.6rem;
+}
+
+.contact-box{
+padding:70px 24px;
+}
+
+.footer-inner{
+flex-direction:column;
+text-align:center;
+}
+
+.about-centered p{
+font-size:1rem;
+line-height:1.9;
+}
+
 }
 
 .nav-links{
