@@ -188,6 +188,12 @@ opacity:1;
 transform:translateY(-2px);
 }
 
+/* MENU BUTTON */
+
+.menu-toggle{
+display:none;
+}
+
 /* SECTIONS */
 
 .container{
@@ -429,6 +435,7 @@ box-shadow:0 10px 30px rgba(37,211,102,.35);
 }
 
 /* MOBILE */
+
 @media(max-width:980px){
 
 .hero{
@@ -440,7 +447,7 @@ height:100vh;
 .hero-bg{
 object-fit:cover;
 
-/* THIS fixes mobile framing */
+/* MOBILE IMAGE ALIGNMENT */
 
 object-position:58% center;
 }
@@ -456,7 +463,6 @@ top:58% !important;
 font-size:.82rem !important;
 
 letter-spacing:.22em !important;
-
 }
 
 /* MOBILE NAVBAR */
@@ -472,16 +478,19 @@ top:10px;
 border-radius:24px;
 }
 
-/* HAMBURGER BUTTON */
+/* HAMBURGER */
 
 .menu-toggle{
 display:block;
+
 font-size:1.8rem;
+
 color:white;
+
 cursor:pointer;
 }
 
-/* MOBILE LINKS DROPDOWN */
+/* MOBILE DROPDOWN */
 
 .nav-links{
 
@@ -558,6 +567,11 @@ line-height:1.9;
 
 }
 
+</style>
+</head>
+
+<body>
+
 <!-- HERO -->
 
 <section class="hero">
@@ -591,11 +605,21 @@ R
 
 </div>
 
-<div class="nav-links">
+<!-- MOBILE MENU -->
+
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+<!-- NAV LINKS -->
+
+<div class="nav-links" id="mobileMenu">
+
 <a href="#about">About</a>
 <a href="#services">Services</a>
 <a href="#testimonials">Testimonials</a>
 <a href="#contact">Contact</a>
+
 </div>
 
 </nav>
@@ -620,17 +644,26 @@ Support designed around your motherhood journey.
 
 <div class="service-card">
 <h3>Pregnancy Support</h3>
-<p>Emotional guidance, birth preparation, and nurturing support throughout pregnancy.</p>
+<p>
+Emotional guidance, birth preparation,
+and nurturing support throughout pregnancy.
+</p>
 </div>
 
 <div class="service-card">
 <h3>Birth Support</h3>
-<p>Continuous calming support during labor and delivery, creating a grounded birth experience.</p>
+<p>
+Continuous calming support during labor and delivery,
+creating a grounded birth experience.
+</p>
 </div>
 
 <div class="service-card">
 <h3>Postpartum Care</h3>
-<p>Gentle postpartum recovery support, care, reassurance, and family guidance.</p>
+<p>
+Gentle postpartum recovery support,
+care, reassurance, and family guidance.
+</p>
 </div>
 
 </div>
@@ -787,6 +820,21 @@ Book Consultation
 <a class="whatsapp" href="#">
 ✦
 </a>
+
+<!-- MOBILE MENU SCRIPT -->
+
+<script>
+
+function toggleMenu(){
+
+document
+.getElementById("mobileMenu")
+.classList
+.toggle("active");
+
+}
+
+</script>
 
 </body>
 </html>
